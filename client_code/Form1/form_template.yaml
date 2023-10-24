@@ -4,10 +4,120 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {}
+  properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
+  components:
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_1
+    layout_properties: {grid_position: 'DPBVJP,HWUHLX'}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Please choose your gender:', font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: true, underline: false, icon: ''}
+      name: label_2
+      layout_properties: {grid_position: 'MSKKWI,ADJWPE'}
+    - type: RadioButton
+      properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+        enabled: true, foreground: '', value: '', visible: true, text: Male, font_size: null,
+        font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+        bold: false, group_name: radioGroup1, underline: false}
+      name: radio_button_1
+      layout_properties: {grid_position: 'KADOAB,KJPEHH'}
+    - type: RadioButton
+      properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+        enabled: true, foreground: '', value: '', visible: true, text: Female, font_size: null,
+        font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+        bold: false, group_name: radioGroup1, underline: false}
+      name: radio_button_2
+      layout_properties: {grid_position: 'KADOAB,OVERUG'}
+      event_bindings: {clicked: radio_button_2_clicked}
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_2
+    layout_properties: {grid_position: 'KYDDSA,BTKVXO'}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Do you indulge in any other activities?', font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: true, underline: false, icon: ''}
+      name: label_3
+      layout_properties: {grid_position: 'UXKUAY,PWNHWS'}
+    - type: CheckBox
+      properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
+        foreground: '', allow_indeterminate: false, visible: true, text: Work, font_size: null,
+        font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+        bold: false, checked: false, underline: false}
+      name: check_box_1
+      layout_properties: {grid_position: 'SRVXXH,SSJCDR'}
+    - type: CheckBox
+      properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
+        foreground: '', allow_indeterminate: false, visible: true, text: Part-time job,
+        font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+        background: '', bold: false, checked: false, underline: false}
+      name: check_box_2
+      layout_properties: {grid_position: 'SRVXXH,WWQXXS'}
+    - type: CheckBox
+      properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
+        foreground: '', allow_indeterminate: false, visible: true, text: Sports, font_size: null,
+        font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+        bold: false, checked: false, underline: false}
+      name: check_box_3
+      layout_properties: {grid_position: 'SRVXXH,JIYIDA'}
+    - type: CheckBox
+      properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
+        foreground: '', allow_indeterminate: false, visible: true, text: Other, font_size: null,
+        font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+        bold: false, checked: false, underline: false}
+      name: check_box_4
+      layout_properties: {grid_position: 'SRVXXH,FJQUFM'}
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_3
+    layout_properties: {grid_position: 'DMMCIX,QBBQMP'}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Are you an undergraduate or graduate student?', font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: true, underline: false, icon: ''}
+      name: label_4
+      layout_properties: {grid_position: 'HGLAMX,AVUELE'}
+    - type: RadioButton
+      properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+        enabled: true, foreground: '', value: '', visible: true, text: Undergraduate,
+        font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+        background: '', bold: false, group_name: radioGroup1, underline: false}
+      name: radio_button_3
+      layout_properties: {grid_position: 'NWAOAH,FJUSJI'}
+    - type: RadioButton
+      properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+        enabled: true, foreground: '', value: '', visible: true, text: Graduate, font_size: null,
+        font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+        bold: false, group_name: radioGroup1, underline: false}
+      name: radio_button_4
+      layout_properties: {grid_position: 'NWAOAH,UKMFJJ'}
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_4
+    layout_properties: {grid_position: 'VCZYOP,MOJRQO'}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Pick your major:', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_5
+      layout_properties: {grid_position: 'FYTSHR,BDBMIY'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+- type: Label
+  properties: {}
+  name: label_1
+  layout_properties: {slot: title}
