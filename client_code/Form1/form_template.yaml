@@ -113,11 +113,41 @@ components:
         underline: false, icon: ''}
       name: label_5
       layout_properties: {grid_position: 'FYTSHR,BDBMIY'}
+    - type: DropDown
+      properties:
+        role: null
+        align: full
+        tooltip: ''
+        placeholder: ''
+        border: ''
+        enabled: true
+        foreground: ''
+        items: [Accounting, Architectural Engineering, Chemical Engineering, Civil Engineering,
+          Computer Engineering, Electrical Engineering, Finance, Human Resource Management,
+          Industrial Engineering, Information Systems and Technology, Management Information Systems,
+          Marketing, Master of Business Administration (MBA), Master of Science in Computer Engineering- AI,
+          'Master of Science program in Electrical Engineering -Power, Energy Sources
+            and Systems (PES)', Mechanical Engineering, Telecommunications and Network Technology]
+        visible: true
+        font_size: null
+        font: ''
+        spacing_above: small
+        spacing_below: small
+        italic: false
+        background: ''
+        bold: false
+        underline: false
+        include_placeholder: false
+      name: drop_down_1
+      layout_properties: {grid_position: 'MOUYAX,AKLDNS'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
 - type: Label
-  properties: {}
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Timetable Evaluation, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
   name: label_1
   layout_properties: {slot: title}
