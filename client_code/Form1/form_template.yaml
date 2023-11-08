@@ -396,38 +396,148 @@ components:
     properties: {role: card}
     type: ColumnPanel
     layout_properties: {grid_position: 'AMDPKX,XTFSML'}
+    components:
+    - name: label_19
+      properties: {text: 'How many of your classes were scheduled in the morning?',
+        bold: true}
+      type: Label
+      layout_properties: {grid_position: 'IELHOJ,CCWPIT'}
+    - name: drop_down_8
+      properties:
+        items: [None, '1', '2', '3', '4', 5 or more]
+      type: DropDown
+      layout_properties: {grid_position: 'XKABGK,YXRCYC'}
   - name: card_19
     properties: {role: card}
     type: ColumnPanel
     layout_properties: {grid_position: 'UEFATY,BBKMNS'}
+    components:
+    - name: label_20
+      properties: {text: 'How many of your classes were scheduled in the afternoon?',
+        bold: true}
+      type: Label
+      layout_properties: {grid_position: 'CTLRJX,EIBPWT'}
+    - name: drop_down_9
+      properties:
+        items: [None, '1', '2', '3', '4', 5 or more]
+      type: DropDown
+      layout_properties: {grid_position: 'FIAEHC,ZFTJWZ'}
   - name: card_20
     properties: {role: card}
     type: ColumnPanel
     layout_properties: {grid_position: 'JKQSFU,IYIQBT'}
+    components:
+    - name: label_21
+      properties: {text: 'How many of your classes were scheduled in the evening?',
+        bold: true}
+      type: Label
+      layout_properties: {grid_position: 'RJPFSZ,VLVDKA'}
+    - name: drop_down_10
+      properties:
+        items: [None, '1', '2', '3', '4', 5 or more]
+      type: DropDown
+      layout_properties: {grid_position: 'FJCVMT,JOAIQY'}
   - name: card_21
     properties: {role: card}
     type: ColumnPanel
     layout_properties: {grid_position: 'EOJNKE,XMHOWS'}
+    components:
+    - name: label_22
+      properties: {text: 'In that semester, did you fail any of your courses? If yes,
+          please specify the reason:', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'VMGRVV,JCOOTN'}
+    - name: drop_down_11
+      properties:
+        items: [None, 'Yes, because of the (Instructor)', 'Yes, because of the (Course
+            Material)', 'Yes, because of the (Personal Reasons)', 'Yes, because of
+            the (Health Issues)', Other]
+      type: DropDown
+      layout_properties: {grid_position: 'WTGZOM,YKMBBO'}
   - name: card_22
     properties: {role: card}
     type: ColumnPanel
     layout_properties: {grid_position: 'KMTNWK,GJSSWV'}
+    components:
+    - name: label_23
+      properties: {text: 'Was your overall GPA had been affected positively or negatively
+          by the marks you received that semester?', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'MJDPXV,PLTAAP'}
+    - name: radio_button_28
+      properties: {text: Positively}
+      type: RadioButton
+      layout_properties: {grid_position: 'BSCILK,TMFGWU'}
+    - name: radio_button_29
+      properties: {text: Neutral}
+      type: RadioButton
+      layout_properties: {grid_position: 'BSCILK,HEINQL'}
+    - name: radio_button_30
+      properties: {text: Negatively}
+      type: RadioButton
+      layout_properties: {grid_position: 'BSCILK,HHMMIL'}
   - name: card_23
     properties: {role: card}
     type: ColumnPanel
     layout_properties: {grid_position: 'UXYUQI,OYTPQN'}
+    components:
+    - name: label_24
+      properties: {text: 'How many of the instructors that you took during that semester
+          were unfamiliar to you?', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'HGESZR,CBWAGT'}
+    - name: drop_down_12
+      properties:
+        items: [None, '1', '2', '3', '4', 5 or more]
+      type: DropDown
+      layout_properties: {grid_position: 'ABTYKW,SVYPPJ'}
   - name: card_24
     properties: {role: card}
     type: ColumnPanel
     layout_properties: {grid_position: 'FABMRC,IUCYKQ'}
+    components:
+    - name: label_25
+      properties: {text: 'How many instructors did you know and did prefer?', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'DRJZGL,BKXTFN'}
+    - name: drop_down_13
+      properties:
+        items: [None, '1', '2', '3', '4', 5 or more]
+      type: DropDown
+      layout_properties: {grid_position: 'GPTTBQ,SYJFNE'}
   - name: card_25
     properties: {role: card}
     type: ColumnPanel
     layout_properties: {grid_position: 'PXGOFT,QCGUOS'}
+    components:
+    - name: label_26
+      properties: {text: 'How many instructors did you know but did not prefer?',
+        bold: true}
+      type: Label
+      layout_properties: {grid_position: 'NPHUUZ,APEJUI'}
+    - name: drop_down_14
+      properties:
+        items: [None, '1', '2', '3', '4', 5 or more]
+      type: DropDown
+      layout_properties: {grid_position: 'HBXRBW,SNEUEG'}
   - name: card_26
     properties: {role: card}
     type: ColumnPanel
     layout_properties: {grid_position: 'VHEHTB,UHTGST'}
+    components:
+    - name: label_27
+      properties: {text: 'Did you follow the primary path of study recommended by
+          your university? ', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'IQQXTT,GFBPUC'}
+    - name: radio_button_31
+      properties: {text: 'Yes'}
+      type: RadioButton
+      layout_properties: {grid_position: 'HKXNGQ,NDYLVQ'}
+    - name: radio_button_32
+      properties: {text: 'No'}
+      type: RadioButton
+      layout_properties: {grid_position: 'HKXNGQ,EKJYWH'}
   - name: card_27
     properties: {role: card}
     type: ColumnPanel
