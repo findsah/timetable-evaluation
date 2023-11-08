@@ -42,9 +42,10 @@ components:
     components:
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: 'Do you indulge in any other activities?', font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: true, underline: false, icon: ''}
+        visible: true, text: 'In addition to your education, do you indulge in any
+          other activities?', font_size: null, font: '', spacing_above: small, icon_align: left,
+        spacing_below: small, italic: false, background: '', bold: true, underline: false,
+        icon: ''}
       name: label_3
       layout_properties: {grid_position: 'UXKUAY,PWNHWS'}
     - type: CheckBox
@@ -75,6 +76,10 @@ components:
         bold: false, checked: false, underline: false}
       name: check_box_4
       layout_properties: {grid_position: 'SRVXXH,FJQUFM'}
+    - name: check_box_5
+      properties: {text: None}
+      type: CheckBox
+      layout_properties: {grid_position: 'SRVXXH,QDODPF'}
   - type: ColumnPanel
     properties: {role: card, col_widths: '{}'}
     name: card_3
@@ -82,9 +87,9 @@ components:
     components:
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: 'Are you an undergraduate or graduate student?', font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: true, underline: false, icon: ''}
+        visible: true, text: 'Are you studying at the undergraduate or graduate level?',
+        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: true, underline: false, icon: ''}
       name: label_4
       layout_properties: {grid_position: 'HGLAMX,AVUELE'}
     - type: RadioButton
@@ -108,9 +113,9 @@ components:
     components:
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: 'Pick your major:', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-        underline: false, icon: ''}
+        visible: true, text: 'What major or area of study do you pursue? ', font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: true, underline: false, icon: ''}
       name: label_5
       layout_properties: {grid_position: 'FYTSHR,BDBMIY'}
     - type: DropDown
@@ -140,6 +145,313 @@ components:
         include_placeholder: false
       name: drop_down_1
       layout_properties: {grid_position: 'MOUYAX,AKLDNS'}
+      data_bindings: []
+  - name: card_5
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'SVKNPY,QSUSGK'}
+    components:
+    - name: label_6
+      properties: {text: 'How many credits have you completed? ', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'ODEJPO,YVPFAF'}
+    - name: radio_button_5
+      properties: {text: Freshman (0-30 credits)}
+      type: RadioButton
+      layout_properties: {grid_position: 'MNHXDP,HQBZQI'}
+    - name: radio_button_6
+      properties: {text: Sophomore (31-60 credits)}
+      type: RadioButton
+      layout_properties: {grid_position: 'MNHXDP,VXWPFP'}
+    - name: radio_button_7
+      properties: {text: Junior (61-90 credits)}
+      type: RadioButton
+      layout_properties: {grid_position: 'MNHXDP,TCYRSG'}
+    - name: radio_button_8
+      properties: {text: Senior (91 credits and above)}
+      type: RadioButton
+      layout_properties: {grid_position: 'MNHXDP,HZFZVD'}
+  - name: card_6
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'EEXTZH,YCHSEY'}
+    components:
+    - name: label_7
+      properties: {text: 'What time of day—morning, afternoon, or evening—do you find
+          to be most suited to learning?', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'KLMBPC,WIIAZB'}
+    - name: radio_button_9
+      properties: {text: Morning}
+      type: RadioButton
+      layout_properties: {grid_position: 'EFYNBY,XNOVSJ'}
+    - name: radio_button_10
+      properties: {text: Afternoon}
+      type: RadioButton
+      layout_properties: {grid_position: 'EFYNBY,ITWZCT'}
+    - name: radio_button_11
+      properties: {text: Evening}
+      type: RadioButton
+      layout_properties: {grid_position: 'EFYNBY,VIMKRK'}
+  - name: card_7
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'HXSHOL,PIEFFK'}
+    components:
+    - name: label_8
+      properties: {text: 'What''s your preferred weekly attendance at college:', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'JLELJX,DHMTOQ'}
+    - name: drop_down_2
+      properties:
+        items: [1 day in a week, 2 days in week, 3 days in week, 4 days in week, 5 days in week]
+      type: DropDown
+      layout_properties: {grid_position: 'BJDGIJ,EGZHSX'}
+  - name: card_8
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'OGWPFA,SZHHTY'}
+    components:
+    - name: label_9
+      properties: {text: 'How many hours a day of study do you think are the most
+          productive for you?', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'RJMSWI,TKXOMQ'}
+    - name: radio_button_12
+      properties: {text: One hour or less}
+      type: RadioButton
+      layout_properties: {grid_position: 'FPMSJU,MWXOBV'}
+    - name: radio_button_13
+      properties: {text: 2 - 4 hours}
+      type: RadioButton
+      layout_properties: {grid_position: 'FPMSJU,OXIFLC'}
+    - name: radio_button_14
+      properties: {text: 5 or more}
+      type: RadioButton
+      layout_properties: {grid_position: 'FPMSJU,FROSFW'}
+  - name: card_10
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'VSLGMX,CBGGZT'}
+    components:
+    - name: label_10
+      properties: {text: 'How long should the breaks be in between classes?', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'PYKLWJ,TRRAQS'}
+    - name: radio_button_15
+      properties: {text: 10 – 15 minutes}
+      type: RadioButton
+      layout_properties: {grid_position: 'TVEFHE,XJTJET'}
+    - name: radio_button_16
+      properties: {text: 30 – 45 minutes}
+      type: RadioButton
+      layout_properties: {grid_position: 'TVEFHE,HUOYID'}
+    - name: radio_button_17
+      properties: {text: 1 - 2 hours}
+      type: RadioButton
+      layout_properties: {grid_position: 'TVEFHE,ZILTJB'}
+    - name: radio_button_18
+      properties: {text: 3 – 4 hours}
+      type: RadioButton
+      layout_properties: {grid_position: 'TVEFHE,QYPHJW'}
+  - name: card_9
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'UDUXXQ,UBHQGN'}
+    components:
+    - name: label_11
+      properties: {text: 'Which semester will you be discussing? Fall, spring, summer?',
+        bold: true}
+      type: Label
+      layout_properties: {grid_position: 'BEVSCL,LJHPCQ'}
+    - name: radio_button_19
+      properties: {text: Fall}
+      type: RadioButton
+      layout_properties: {grid_position: 'EWJSHN,VNURUY'}
+    - name: radio_button_20
+      properties: {text: Spring}
+      type: RadioButton
+      layout_properties: {grid_position: 'EWJSHN,ZSBFAY'}
+    - name: radio_button_21
+      properties: {text: Summer}
+      type: RadioButton
+      layout_properties: {grid_position: 'EWJSHN,ZNDTIS'}
+  - name: card_11
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'HFAMUP,BXCCWO'}
+    components:
+    - name: label_12
+      properties: {text: 'How many credits did you enroll in during that semester?',
+        bold: true}
+      type: Label
+      layout_properties: {grid_position: 'QUERPK,PRGBWW'}
+    - name: drop_down_3
+      properties:
+        items: [6 – 8 credits, 9 - 12 credits, 13 - 15 credits, 16 - 18 credits]
+      type: DropDown
+      layout_properties: {grid_position: 'AHCCGJ,HCHVNM'}
+  - name: card_12
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'WKYCUO,WQNQPR'}
+    components:
+    - name: label_13
+      properties: {bold: true, text: 'How many of those were elective credits?'}
+      type: Label
+      layout_properties: {grid_position: 'BAZZYU,TTXITX'}
+    - name: drop_down_4
+      properties:
+        items: [None, '1', '2', '3', '4', '5', 6 or above]
+      type: DropDown
+      layout_properties: {grid_position: 'LRLYKB,FVZJGP'}
+  - name: card_13
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'CZNUUF,PMJIYV'}
+    components:
+    - name: label_14
+      properties: {text: 'How many of those were core credits?', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'EDNNNB,YFWCZZ'}
+    - name: drop_down_5
+      properties:
+        items: [None, 6 – 8 credits, 9 - 12 credits, 13 - 15 credits, 16 - 18 credits]
+      type: DropDown
+      layout_properties: {grid_position: 'YFJCPH,ETMWCT'}
+  - name: card_14
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'WGSWEL,HPQNOX'}
+    components:
+    - name: label_15
+      properties: {text: 'How many of those classes included laboratory sessions?',
+        bold: true}
+      type: Label
+      layout_properties: {grid_position: 'USXGMX,WCATZH'}
+    - name: drop_down_6
+      properties:
+        items: [None, '1', '2', '3', '4', '5']
+      type: DropDown
+      layout_properties: {grid_position: 'ADKCXS,EJOPCK'}
+  - name: card_15
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'BGEAQH,XDEWXS'}
+    components:
+    - name: label_16
+      properties: {text: 'How many days per week were you attending classes?', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'HXOEFB,VVWIQR'}
+    - name: drop_down_7
+      properties:
+        items: [1 day in a week, 2 days in week, 3 days in week, 4 days in week, 5 days in week]
+      type: DropDown
+      layout_properties: {grid_position: 'WJSHPF,YNKNED'}
+  - name: card_16
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'QCNICT,YZCQZR'}
+    components:
+    - name: label_17
+      properties: {text: 'How many hours a day at the very least did your classes
+          require?', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'YCUBQV,SXMOKO'}
+    - name: radio_button_22
+      properties: {text: One hour or less}
+      type: RadioButton
+      layout_properties: {grid_position: 'BZOIMW,YOMKVB'}
+    - name: radio_button_23
+      properties: {text: 2 - 4 hours}
+      type: RadioButton
+      layout_properties: {grid_position: 'BZOIMW,DITCXU'}
+    - name: radio_button_24
+      properties: {text: 5 or more}
+      type: RadioButton
+      layout_properties: {grid_position: 'BZOIMW,PXKRUQ'}
+  - name: card_17
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'JJWTTT,QJLWXC'}
+    components:
+    - name: label_18
+      properties: {text: 'What was the maximum number of hours per day for your classes?',
+        bold: true}
+      type: Label
+      layout_properties: {grid_position: 'MGAGDF,JMFOHO'}
+    - name: radio_button_25
+      properties: {text: One hour or less}
+      type: RadioButton
+      layout_properties: {grid_position: 'HGHNNA,KPUQKR'}
+    - name: radio_button_26
+      properties: {text: 2 - 4 hours}
+      type: RadioButton
+      layout_properties: {grid_position: 'HGHNNA,AIGETK'}
+    - name: radio_button_27
+      properties: {text: 5 or more}
+      type: RadioButton
+      layout_properties: {grid_position: 'HGHNNA,JISVKV'}
+  - name: card_18
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'AMDPKX,XTFSML'}
+  - name: card_19
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'UEFATY,BBKMNS'}
+  - name: card_20
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'JKQSFU,IYIQBT'}
+  - name: card_21
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'EOJNKE,XMHOWS'}
+  - name: card_22
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'KMTNWK,GJSSWV'}
+  - name: card_23
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'UXYUQI,OYTPQN'}
+  - name: card_24
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'FABMRC,IUCYKQ'}
+  - name: card_25
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'PXGOFT,QCGUOS'}
+  - name: card_26
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'VHEHTB,UHTGST'}
+  - name: card_27
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'YTDVCQ,FQMRRP'}
+  - name: card_28
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'ECVGQE,OVPHFC'}
+  - name: card_29
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'JRIZWB,ICQAJT'}
+  - name: card_30
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'OHMRKW,VZROGF'}
+  - name: card_31
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'VOJOXP,IHWXDM'}
+  - name: card_32
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'DHNAMP,ZRUZQT'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
