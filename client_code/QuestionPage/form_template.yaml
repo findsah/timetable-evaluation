@@ -566,6 +566,12 @@ components:
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+  components:
+  - name: link_1
+    properties: {text: Home, underline: true, bold: false}
+    type: Link
+    layout_properties: {}
+    event_bindings: {click: link_1_click}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: Timetable Evaluation, font_size: null, font: '', spacing_above: small, icon_align: left,
