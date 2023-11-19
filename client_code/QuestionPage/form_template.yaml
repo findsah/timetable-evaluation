@@ -282,7 +282,7 @@ components:
     layout_properties: {grid_position: 'HFAMUP,BXCCWO'}
     components:
     - name: label_12
-      properties: {text: 'How many credits did you enroll in during that semester?',
+      properties: {text: 'How many credits did you enroll in during said semester?',
         bold: true}
       type: Label
       layout_properties: {grid_position: 'QUERPK,PRGBWW'}
@@ -297,7 +297,7 @@ components:
     layout_properties: {grid_position: 'WKYCUO,WQNQPR'}
     components:
     - name: label_13
-      properties: {bold: true, text: 'How many of those were elective credits?'}
+      properties: {bold: true, text: 'How many of those are elective credits?'}
       type: Label
       layout_properties: {grid_position: 'BAZZYU,TTXITX'}
     - name: drop_down_4
@@ -311,7 +311,7 @@ components:
     layout_properties: {grid_position: 'CZNUUF,PMJIYV'}
     components:
     - name: label_14
-      properties: {text: 'How many of those were core credits?', bold: true}
+      properties: {text: 'How many of those are core credits?', bold: true}
       type: Label
       layout_properties: {grid_position: 'EDNNNB,YFWCZZ'}
     - name: drop_down_5
@@ -340,7 +340,8 @@ components:
     layout_properties: {grid_position: 'BGEAQH,XDEWXS'}
     components:
     - name: label_16
-      properties: {text: 'How many days per week were you attending classes?', bold: true}
+      properties: {text: 'How many days per week are/were you attending classes?',
+        bold: true}
       type: Label
       layout_properties: {grid_position: 'HXOEFB,VVWIQR'}
     - name: drop_down_7
@@ -354,7 +355,7 @@ components:
     layout_properties: {grid_position: 'QCNICT,YZCQZR'}
     components:
     - name: label_17
-      properties: {text: 'How many hours a day at the very least did your classes
+      properties: {text: 'How many hours a day at the very least did those classes
           require?', bold: true}
       type: Label
       layout_properties: {grid_position: 'YCUBQV,SXMOKO'}
@@ -376,7 +377,7 @@ components:
     layout_properties: {grid_position: 'JJWTTT,QJLWXC'}
     components:
     - name: label_18
-      properties: {text: 'What was the maximum number of hours per day for your classes?',
+      properties: {text: 'What was the maximum number of hours per day for those classes?',
         bold: true}
       type: Label
       layout_properties: {grid_position: 'MGAGDF,JMFOHO'}
@@ -398,7 +399,7 @@ components:
     layout_properties: {grid_position: 'AMDPKX,XTFSML'}
     components:
     - name: label_19
-      properties: {text: 'How many of your classes were scheduled in the morning?',
+      properties: {text: 'How many of those classes were scheduled in the morning?',
         bold: true}
       type: Label
       layout_properties: {grid_position: 'IELHOJ,CCWPIT'}
@@ -413,7 +414,7 @@ components:
     layout_properties: {grid_position: 'UEFATY,BBKMNS'}
     components:
     - name: label_20
-      properties: {text: 'How many of your classes were scheduled in the afternoon?',
+      properties: {text: 'How many of those classes were scheduled in the afternoon?',
         bold: true}
       type: Label
       layout_properties: {grid_position: 'CTLRJX,EIBPWT'}
@@ -428,7 +429,7 @@ components:
     layout_properties: {grid_position: 'JKQSFU,IYIQBT'}
     components:
     - name: label_21
-      properties: {text: 'How many of your classes were scheduled in the evening?',
+      properties: {text: 'How many of those classes were scheduled in the evening?',
         bold: true}
       type: Label
       layout_properties: {grid_position: 'RJPFSZ,VLVDKA'}
@@ -526,8 +527,8 @@ components:
     layout_properties: {grid_position: 'VHEHTB,UHTGST'}
     components:
     - name: label_27
-      properties: {text: 'Did you follow the primary path of study recommended by
-          your university? ', bold: true}
+      properties: {text: 'Are/Did you follow the primary path of study recommended
+          by your university? ', bold: true}
       type: Label
       layout_properties: {grid_position: 'IQQXTT,GFBPUC'}
     - name: radio_button_31
@@ -542,26 +543,98 @@ components:
     properties: {role: card}
     type: ColumnPanel
     layout_properties: {grid_position: 'YTDVCQ,FQMRRP'}
+    components:
+    - name: label_28
+      properties: {text: 'How difficult was your course schedule during that semester?',
+        bold: true}
+      type: Label
+      layout_properties: {grid_position: 'STSAZB,WHMFWS'}
+    - name: drop_down_15
+      properties:
+        items: [Very Easy, Easy, Neutral, Hard, Very Hard]
+      type: DropDown
+      layout_properties: {grid_position: 'UQPEZR,RBFQHR'}
   - name: card_28
     properties: {role: card}
     type: ColumnPanel
     layout_properties: {grid_position: 'ECVGQE,OVPHFC'}
+    components:
+    - name: label_29
+      properties: {text: 'Did you find it challenging to balance your course schedule
+          with your work or other commitments? ', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'FVVZHW,LHPUHP'}
+    - name: radio_button_33
+      properties: {text: 'Yes'}
+      type: RadioButton
+      layout_properties: {grid_position: 'AXGDII,RFNBFQ'}
+    - name: radio_button_34
+      properties: {text: 'No'}
+      type: RadioButton
+      layout_properties: {grid_position: 'AXGDII,FPOOQF'}
   - name: card_29
     properties: {role: card}
     type: ColumnPanel
     layout_properties: {grid_position: 'JRIZWB,ICQAJT'}
+    components:
+    - name: label_30
+      properties: {text: 'Did you ever find any particular class times to be inconvenient? ',
+        bold: true}
+      type: Label
+      layout_properties: {grid_position: 'IAZSKL,WBMUEE'}
+    - name: text_box_1
+      properties: {}
+      type: TextBox
+      layout_properties: {grid_position: 'FPOOMS,XQJJAN'}
   - name: card_30
     properties: {role: card}
     type: ColumnPanel
     layout_properties: {grid_position: 'OHMRKW,VZROGF'}
+    components:
+    - name: label_31
+      properties: {text: 'Did any of the courses you were interested in conflict with
+          your schedule? Provide a reason if can be:', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'JUHRYD,IBHZYC'}
+    - name: text_box_2
+      properties: {}
+      type: TextBox
+      layout_properties: {grid_position: 'JHMJIF,YAWGTL'}
   - name: card_31
     properties: {role: card}
     type: ColumnPanel
     layout_properties: {grid_position: 'VOJOXP,IHWXDM'}
+    components:
+    - name: label_32
+      properties: {text: 'How satisfied were you with your course schedule during
+          that semester?', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'TSAAMY,BLQUBG'}
+    - name: drop_down_16
+      properties:
+        items: [Very Satisfied, Satisfied, Neutral, Dissatisfied, Very Dissatisfied]
+      type: DropDown
+      layout_properties: {grid_position: 'OGTAOI,BDOCPQ'}
   - name: card_32
     properties: {role: card}
     type: ColumnPanel
     layout_properties: {grid_position: 'DHNAMP,ZRUZQT'}
+    components:
+    - name: label_33
+      properties: {text: 'If a web-based tool for evaluating schedules were available,
+          how likely would you be to utilize it?', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'FHEYNE,EXWHGX'}
+    - name: drop_down_17
+      properties:
+        items: [Very likely, Neutral, Not very likely]
+      type: DropDown
+      layout_properties: {grid_position: 'SPKMWO,EGGWPQ'}
+  - name: button_1
+    properties: {text: SUBMIT, bold: true}
+    type: Button
+    layout_properties: {grid_position: 'YNEVBI,XSWIPB'}
+    event_bindings: {click: button_1_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
@@ -573,9 +646,9 @@ components:
     layout_properties: {}
     event_bindings: {click: link_1_click}
 - type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: Timetable Evaluation, font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: false, underline: false,
-    icon: ''}
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: AI-Based Analysis of Course Characteristics for Timetable Evaluatio,
+    font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+    italic: false, background: '', bold: false, underline: false, icon: ''}
   name: label_1
   layout_properties: {slot: title}

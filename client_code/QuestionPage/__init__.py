@@ -2,6 +2,7 @@ from ._anvil_designer import QuestionPageTemplate
 from anvil import *
 
 from ..WelcomePage import WelcomePage
+from ..ResultPage import ResultPage
 
 class QuestionPage(QuestionPageTemplate):
   def __init__(self, **properties):
@@ -16,6 +17,8 @@ class QuestionPage(QuestionPageTemplate):
 
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
-    self.content_panel.clear()
-    self.content_panel.add_component(WelcomePage())
+    open_form(WelcomePage())
 
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form(ResultPage())

@@ -1,40 +1,33 @@
+is_package: true
 container:
-  type: ColumnPanel
-  properties: {background: 'theme:White'}
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
 components:
-- name: card_2
-  properties: {role: card, background: 'theme:Gray 100'}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'VRFBRM,FJQXXD'}
+- type: ColumnPanel
+  properties: {}
+  name: content_panel
+  layout_properties: {slot: default}
   components:
   - name: image_1
-    properties: {source: _/theme/aum-english-logo1-1.png, display_mode: shrink_to_fit,
-      background: 'theme:Gray 100'}
+    properties: {source: _/theme/aum-english-logo1-1.png, display_mode: shrink_to_fit}
     type: Image
-    layout_properties: {grid_position: 'NARINN,PHKIZB'}
-- name: card_1
-  properties: {role: card, background: 'theme:Gray 100'}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'BQBHKF,FRADOF'}
-  components:
-  - name: label_1
-    properties: {text: AI-Based Analysis of Course Characteristics for Timetable Evaluation,
-      align: center, bold: true, underline: false, font_size: 22}
-    type: Label
-    layout_properties: {grid_position: 'FXHKBU,QBPGTF'}
+    layout_properties: {grid_position: 'GFUQBL,VRGUYZ'}
   - name: label_2
-    properties: {text: This is a 5-minute survey questionnaire titled "AI-Based Analysis of Course Characteristics for Timetable Evaluation" that is available to AUM students. It is part of a final project for a group of students majoring in "Information Systems and Technology." The data collected will be securely stored and used exclusively for the purpose of this project. The purpose of this questions is too evaluate your timetable.,
-      align: center, font_size: 15}
+    properties: {text: AI-Based Analysis of Course Characteristics for Timetable Evaluation,
+      bold: true, underline: false, align: center, font_size: 25, font: ''}
     type: Label
-    layout_properties: {grid_position: 'CKXFDA,YKNMVK'}
-- name: card_3
-  properties: {role: card}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'JGJYMI,NMGSIP'}
-  components:
+    layout_properties: {grid_position: 'ZKFHMQ,KGSJUT'}
+  - name: label_3
+    properties: {text: This is a 5-minute survey questionnaire titled "AI-Based Analysis of Course Characteristics for Timetable Evaluation" that is available to AUM students. It is part of a final project for a group of students majoring in "Information Systems and Technology." The data collected will be securely stored and used exclusively for the purpose of this project. The purpose of this questions is too evaluate your timetable.,
+      font: '', align: center}
+    type: Label
+    layout_properties: {grid_position: 'NNHOBE,KHKKCG'}
   - name: button_1
-    properties: {text: Start, bold: true}
+    properties: {text: Start}
     type: Button
-    layout_properties: {grid_position: 'XRTAGB,BYJIAZ'}
+    layout_properties: {grid_position: 'JDUBRI,CPTQTG'}
     event_bindings: {click: button_1_click}
-is_package: true
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
