@@ -612,7 +612,7 @@ components:
       layout_properties: {grid_position: 'TSAAMY,BLQUBG'}
     - name: drop_down_16
       properties:
-        items: [Very Satisfied, Satisfied, Neutral, Dissatisfied, Very Dissatisfied]
+        items: [Very Dissatisfied, Dissatisfied, Neutral, Satisfied, Very Satisfied]
       type: DropDown
       layout_properties: {grid_position: 'OGTAOI,BDOCPQ'}
   - name: card_32
@@ -627,7 +627,7 @@ components:
       layout_properties: {grid_position: 'FHEYNE,EXWHGX'}
     - name: drop_down_17
       properties:
-        items: [Very likely, Neutral, Not very likely]
+        items: [Not very likely, Not likely, Neutral, Likely, Very likely]
       type: DropDown
       layout_properties: {grid_position: 'SPKMWO,EGGWPQ'}
   - name: button_1
