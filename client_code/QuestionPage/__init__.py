@@ -20,13 +20,9 @@ class QuestionPage(QuestionPageTemplate):
     """This method is called when the link is clicked"""
     open_form(WelcomePage())
 
-
-@anvil.server.callable
-def send_data_to_jupyter(data):
-    # Use anvil.server.call to send data to the Jupyter notebook
-    # Example: anvil.server.call('jupyter_function', data)
-    pass
-  
   def button_1_click(self, **event_args):
+    f1 = self.text_box_1.text
+    result = anvil.server.call('GetCustomerInfo', 1, 2)
+    self.text_box_1.text = result
     """This method is called when the button is clicked"""
     open_form(ResultPage())
