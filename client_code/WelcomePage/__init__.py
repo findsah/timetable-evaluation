@@ -1,5 +1,6 @@
 from ._anvil_designer import WelcomePageTemplate
 from anvil import *
+import anvil.server
 
 class WelcomePage(WelcomePageTemplate):
   def __init__(self, **properties):

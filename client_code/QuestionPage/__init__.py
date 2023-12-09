@@ -1,5 +1,6 @@
 from ._anvil_designer import QuestionPageTemplate
 from anvil import *
+import anvil.server
 
 from ..WelcomePage import WelcomePage
 from ..ResultPage import ResultPage
