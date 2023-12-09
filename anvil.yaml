@@ -5,7 +5,7 @@ services:
   server_config: {}
 startup: {type: form, module: WelcomePage}
 package_name: Timetable_Evaluation
-allow_embedding: false
+allow_embedding: true
 name: Timetable Evaluation
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
@@ -13,3 +13,4 @@ metadata: {}
 startup_form: null
 db_schema: {}
 uplink_visible: true
+renamed: true
