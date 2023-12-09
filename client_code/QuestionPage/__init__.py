@@ -22,7 +22,7 @@ class QuestionPage(QuestionPageTemplate):
 
   def button_1_click(self, **event_args):
     f1 = self.text_box_1.text
-    result = anvil.server.call('GetCustomerInfo', 1, 2)
+    result = anvil.server.call('GetCustomerInfo', 11)
     self.text_box_1.text = result
     """This method is called when the button is clicked"""
     open_form(ResultPage())
