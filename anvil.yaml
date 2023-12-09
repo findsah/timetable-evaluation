@@ -1,12 +1,15 @@
-allow_embedding: false
-package_name: Timetable_Evaluation
-startup: {type: form, module: WelcomePage}
-name: Timetable Evaluation
-startup_form: null
-uplink_visible: true
-runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
-  server_spec: null}
+correct_dependency_ids: {}
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
+startup: {type: form, module: WelcomePage}
+package_name: Timetable_Evaluation
+allow_embedding: false
+name: Timetable Evaluation
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
+  server_spec: null}
+metadata: {}
+startup_form: null
+db_schema: {}
+uplink_visible: true
