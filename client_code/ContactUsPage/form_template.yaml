@@ -7,6 +7,21 @@ components:
   properties: {}
   name: content_panel
   layout_properties: {slot: default}
+  components:
+  - name: headline_1
+    properties: {role: headline, text: Contact Us, underline: true}
+    type: Label
+    layout_properties: {grid_position: 'RDMAFA,KPADVS'}
+  - name: label_1
+    properties: {text: 'Email us:
+
+        Hessah Almutairi: 43155@aum.edu.kw
+
+        Shahed S S AlAjmi: 63177@aum.edu.kw
+
+        '}
+    type: Label
+    layout_properties: {grid_position: 'TTRJTW,ERKJKH'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
