@@ -37,11 +37,11 @@ components:
   layout_properties: {slot: left-nav}
   components:
   - name: link_2
-    properties: {text: Home}
+    properties: {text: Home, underline: true}
     type: Link
     layout_properties: {grid_position: 'DKXCHJ,XRYVZP'}
     event_bindings: {click: link_2_click}
   - name: link_1
-    properties: {text: Contact Us}
+    properties: {text: Contact Us, underline: true}
     type: Link
     layout_properties: {grid_position: 'VOHPAI,NNMVUC'}
