@@ -18,8 +18,15 @@ components:
     type: Label
     layout_properties: {grid_position: 'ZKFHMQ,KGSJUT'}
   - name: label_3
-    properties: {text: This is a 5-minute survey questionnaire titled "AI-Based Analysis of Course Characteristics for Timetable Evaluation" that is available to AUM students. It is part of a final project for a group of students majoring in "Information Systems and Technology." The data collected will be securely stored and used exclusively for the purpose of this project. The purpose of this questions is too evaluate your timetable.,
-      font: '', align: center}
+    properties: {text: 'This is a 5-minute survey questionnaire titled "AI-Based Analysis
+        of Course Characteristics for Timetable Evaluation" that is available to AUM
+        students. It is part of a final project for a group of students majoring in
+        "Information Systems and Technology." The data collected will be securely
+        stored and used exclusively for the purpose of this project. The purpose of
+        this questions is too evaluate your timetable.
+
+
+        ', font: '', align: center}
     type: Label
     layout_properties: {grid_position: 'NNHOBE,KHKKCG'}
   - name: button_1
@@ -27,6 +34,32 @@ components:
     type: Button
     layout_properties: {grid_position: 'JDUBRI,CPTQTG'}
     event_bindings: {click: button_1_click}
+  - name: label_1
+    properties: {text: '
+
+        Thanks to artificial intelligence techniques, the evaluation of student schedules
+        can be done automatically in a simple and fast way to show AUM students recommendations
+        tailored to their interests and preferences.
+
+
+        So how does this application work? First, we need to collect data from previous
+        semesters: what courses the students enrolled in, what day and time their
+        classes were, what was the student''s major and type of courses (optional,
+        compulsory, with prerequisites), and whether students were satisfied with
+        their schedule and the number of courses they passed. Then we need to store
+        all these data, clean and analyze them. The application will then evaluate
+        the student''s current prospective schedule and rate it (ie: easy, hard, very
+        hard, etc.).
+
+
+        In this project, we focus on students'' historical data to help them in their
+        decision-making processes regarding their academic schedules.
+
+
+        Apply machine and deep learning methods to accurately evaluate the student''s
+        prospective schedules and rate them'}
+    type: Label
+    layout_properties: {grid_position: 'ZGGXLS,ENMMOL'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
@@ -36,12 +69,8 @@ components:
   type: ColumnPanel
   layout_properties: {slot: left-nav}
   components:
-  - name: link_2
-    properties: {text: Home, underline: true}
-    type: Link
-    layout_properties: {grid_position: 'DKXCHJ,XRYVZP'}
-    event_bindings: {click: link_2_click}
   - name: link_1
     properties: {text: Contact Us, underline: true}
     type: Link
     layout_properties: {grid_position: 'VOHPAI,NNMVUC'}
+    event_bindings: {click: link_1_click}

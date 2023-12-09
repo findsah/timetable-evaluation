@@ -2,7 +2,6 @@ from ._anvil_designer import ContactUsPageTemplate
 from anvil import *
 import anvil.server
 
-from ..WelcomePage import WelcomePage
 
 class ContactUsPage(ContactUsPageTemplate):
   def __init__(self, **properties):
@@ -13,4 +12,6 @@ class ContactUsPage(ContactUsPageTemplate):
 
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form(WelcomePage())
+    open_form('WelcomePage')
+
+ 

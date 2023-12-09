@@ -4,6 +4,7 @@ import anvil.server
 
 from ..WelcomePage import WelcomePage
 from ..ResultPage import ResultPage
+from ..ContactUsPage import ContactUsPage
 
 class QuestionPage(QuestionPageTemplate):
   def __init__(self, **properties):
@@ -18,11 +19,14 @@ class QuestionPage(QuestionPageTemplate):
 
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form(WelcomePage())
+    open_form('WelcomePage')
 
   def button_1_click(self, **event_args):
-    f1 = self.text_box_1.text
-    result = anvil.server.call('GetCustomerInfo', 11)
-    self.text_box_1.text = result
+    pass
+
+  def link_2_click(self, **event_args):
+    open_form('ContactUsPage')
+
+  def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form(ResultPage())
+    pass

@@ -13,13 +13,9 @@ components:
     type: Label
     layout_properties: {grid_position: 'RDMAFA,KPADVS'}
   - name: label_1
-    properties: {text: 'Email us:
-
-        Hessah Almutairi: 43155@aum.edu.kw
-
-        Shahed S S AlAjmi: 63177@aum.edu.kw
-
-        '}
+    properties: {text: "Email us:\n\nHessah M M A Almutairi: \n43155@aum.edu.kw\n\n\
+        Shahed S S AlAjmi: \n63177@aum.edu.kw\n\nZeinab N M N M Alanzi: \n46347@aum.edu.kw\n\
+        \nSarah Abdullah Ibrahim Alholi: \n48589@aum.edu.kw\n"}
     type: Label
     layout_properties: {grid_position: 'TTRJTW,ERKJKH'}
 - type: FlowPanel
@@ -34,5 +30,5 @@ components:
   - name: link_1
     properties: {text: Home, underline: true}
     type: Link
-    layout_properties: {grid_position: 'DOQZSE,WIIMXS'}
+    layout_properties: {grid_position: 'AHNNJG,PQWDGB'}
     event_bindings: {click: link_1_click}
