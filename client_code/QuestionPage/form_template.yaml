@@ -639,12 +639,7 @@ components:
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
-  components:
-  - name: link_1
-    properties: {text: Home, underline: true, bold: false}
-    type: Link
-    layout_properties: {}
-    event_bindings: {click: link_1_click}
+  components: []
 - type: Label
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
     visible: true, text: AI-Based Analysis of Course Characteristics for Timetable Evaluatio,
@@ -652,3 +647,13 @@ components:
     italic: false, background: '', bold: false, underline: false, icon: ''}
   name: label_1
   layout_properties: {slot: title}
+- name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {slot: left-nav}
+  components:
+  - name: link_1
+    properties: {text: Home, underline: true, bold: false}
+    type: Link
+    layout_properties: {grid_position: 'CAPMOJ,CHIFFH'}
+    event_bindings: {click: link_1_click}
