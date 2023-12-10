@@ -69,8 +69,14 @@ components:
   type: ColumnPanel
   layout_properties: {slot: left-nav}
   components:
+  - name: link_2
+    properties: {text: Full Questions, underline: true}
+    type: Link
+    layout_properties: {grid_position: 'DRTOPI,XTXVLD'}
+    event_bindings: {click: link_2_click}
   - name: link_1
     properties: {text: Contact Us, underline: true}
     type: Link
     layout_properties: {grid_position: 'VOHPAI,NNMVUC'}
     event_bindings: {click: link_1_click}
+    components: []

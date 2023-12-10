@@ -11,9 +11,19 @@ components:
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+  components: []
+- name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {slot: left-nav}
   components:
   - name: link_1
     properties: {text: Home, underline: true}
     type: Link
     event_bindings: {click: link_1_click}
-    layout_properties: {}
+    layout_properties: {grid_position: 'GKSQDK,XAHTPB'}
+  - name: link_2
+    properties: {text: Contact Us, underline: true}
+    type: Link
+    layout_properties: {grid_position: 'XZGKSM,NAPGEK'}
+    event_bindings: {click: link_2_click}
