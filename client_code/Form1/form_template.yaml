@@ -317,6 +317,6 @@ components:
     layout_properties: {grid_position: 'OVELJZ,VUXJXE'}
     event_bindings: {click: link_2_click}
 - name: label_1
-  properties: {text: AI-Based Analysis of Course Characteristics for Timetable Evaluatio}
+  properties: {text: AI-Based Analysis of Course Characteristics for Timetable Evaluation}
   type: Label
   layout_properties: {slot: title}
