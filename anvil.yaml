@@ -4,9 +4,9 @@ services:
   client_config: {}
   server_config: {}
 startup: {type: form, module: WelcomePage}
-package_name: Timetable_Evaluation
+package_name: Timetable_Evaluation_
 allow_embedding: true
-name: Timetable Evaluation
+name: 'Timetable Evaluation '
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
 metadata: {}
