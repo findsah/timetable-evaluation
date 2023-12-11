@@ -21,13 +21,16 @@ class QuestionPage(QuestionPageTemplate):
         open_form('WelcomePage')
 
     def button_1_click(self, **event_args):
-        # Get the user's responses
+        Get the user's responses
         response1 = self.text_box_1.text
         response2 = self.text_box_2.text
         response3 = self.text_box_3.text
 
         # Call the Anvil server function to send responses to Jupyter notebook
         result = anvil.server.call('predict_result', response1, response2, response3)
+
+        # For demonstration purposes, let's assume the result is a placeholder value
+        result = "PlaceholderResult"
 
         # Open the ResultPage and pass the result as a parameter
         open_form(ResultPage, result=result)
