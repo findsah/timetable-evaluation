@@ -1,6 +1,7 @@
+# _anvil_designer.py
+import random
 from ._anvil_designer import ResultPageTemplate
 from anvil import *
-import random
 
 class ResultPage(ResultPageTemplate):
     def __init__(self, result, **properties):

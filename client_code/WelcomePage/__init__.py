@@ -1,24 +1,22 @@
 from ._anvil_designer import WelcomePageTemplate
 from anvil import *
-import anvil.server
-
-from ..ContactUsPage import ContactUsPage
 
 class WelcomePage(WelcomePageTemplate):
-  def __init__(self, **properties):
-    # Set Form properties and Data Bindings.
-    self.init_components(**properties)
+    def __init__(self, **properties):
+        # Set Form properties and Data Bindings.
+        self.init_components(**properties)
 
-    # Any code you write here will run before the form opens.
+        # Open the QuestionPage when the WelcomePage is initialized
+        open_form('QuestionPage')
 
-  def button_1_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form("Form1")
+    def button_1_click(self, **event_args):
+        """This method is called when the button is clicked"""
+        open_form("QuestionPage")
 
-  def link_1_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    open_form('ContactUsPage')
+    def link_1_click(self, **event_args):
+        """This method is called when the link is clicked"""
+        open_form('ContactUsPage')
 
-  def link_2_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    open_form('QuestionPage')
+    def link_2_click(self, **event_args):
+        """This method is called when the link is clicked"""
+        open_form('QuestionPage')
