@@ -25,7 +25,13 @@ class Form1(Form1Template):
     """This method is called when the button is clicked"""
 
     
-    
+    # Check the value of a radiobutton and set 0 as the value of another variable
+    radio_button_3_value = 0
+    if app.radio_button_3.checked:
+        radio_button_3_value = 0  # Set to 0 based on the condition (modify as needed)
+    radio_button_4_value = 1
+    if app.radio_button_4.checked:
+        radio_button_4_value = 0  # Set to 0 based on the condition (modify as needed)
     
         Get the user's responses
         response1 = self.text_box_1.text
