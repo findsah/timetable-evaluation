@@ -132,7 +132,7 @@ components:
       type: RadioButton
       layout_properties: {grid_position: 'YPATIG,JVUOMH'}
     - name: radio_button_19
-      properties: {text: radio_button_19}
+      properties: {text: 3 – 4 hours}
       type: RadioButton
       layout_properties: {grid_position: 'YPATIG,YREZZO'}
   - name: card_7
@@ -186,35 +186,6 @@ components:
         items: [None, '1', '2', '3', '4', '5', 6 or above]
       type: DropDown
       layout_properties: {grid_position: 'QLIANV,BQIQSQ'}
-  - name: card_10
-    properties: {role: card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'THDNTX,WLSCYO'}
-    components:
-    - name: label_11
-      properties: {text: 'How many of those are core credits?', bold: true}
-      type: Label
-      layout_properties: {grid_position: 'BBYRRX,ZBGWAJ'}
-    - name: drop_down_5
-      properties:
-        items: [None, 6 – 8 credits, 9 - 12 credits, 13 - 15 credits, 16 - 18 credits]
-      type: DropDown
-      layout_properties: {grid_position: 'INXTWP,VOYNHD'}
-  - name: card_11
-    properties: {role: card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'LTFPNJ,FSBDTV'}
-    components:
-    - name: label_12
-      properties: {text: 'How many of those classes included laboratory sessions?',
-        bold: true}
-      type: Label
-      layout_properties: {grid_position: 'SLHAZS,HKWVEO'}
-    - name: drop_down_6
-      properties:
-        items: [None, '1', '2', '3', '4', '5']
-      type: DropDown
-      layout_properties: {grid_position: 'XRLQOV,KFCICS'}
   - name: card_12
     properties: {role: card}
     type: ColumnPanel
@@ -230,6 +201,50 @@ components:
         items: [1 day in a week, 2 days in week, 3 days in week, 4 days in week, 5 days in week]
       type: DropDown
       layout_properties: {grid_position: 'XXZPEG,DMGBFM'}
+  - name: card_10
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'HRSOTA,LQOIZB'}
+    components:
+    - name: label_11
+      properties: {text: 'How many hours a day at the very least did those classes
+          require?', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'IXWWKU,ZMEVBJ'}
+    - name: radio_button_20
+      properties: {text: One hour or less}
+      type: RadioButton
+      layout_properties: {grid_position: 'JHTAZT,LROCGG'}
+    - name: radio_button_21
+      properties: {text: 2 - 4 hours}
+      type: RadioButton
+      layout_properties: {grid_position: 'JHTAZT,YDMZHT'}
+    - name: radio_button_22
+      properties: {text: 5 or more}
+      type: RadioButton
+      layout_properties: {grid_position: 'JHTAZT,BNJMOD'}
+  - name: card_11
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'FNZDCP,DEPJGV'}
+    components:
+    - name: label_12
+      properties: {text: 'What was the maximum number of hours per day for those classes?',
+        bold: true}
+      type: Label
+      layout_properties: {grid_position: 'GNOPHG,AOMVCH'}
+    - name: radio_button_23
+      properties: {text: radio_button_23}
+      type: RadioButton
+      layout_properties: {grid_position: 'UMULQS,HXMMMS'}
+    - name: radio_button_24
+      properties: {text: radio_button_24}
+      type: RadioButton
+      layout_properties: {grid_position: 'UMULQS,LLWOCH'}
+    - name: radio_button_25
+      properties: {text: radio_button_25}
+      type: RadioButton
+      layout_properties: {grid_position: 'UMULQS,TIYZJE'}
   - name: card_15
     properties: {role: card}
     type: ColumnPanel
