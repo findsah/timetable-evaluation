@@ -12,7 +12,7 @@ class WelcomePage(WelcomePageTemplate):
 
     def button_1_click(self, **event_args):
         """This method is called when the button is clicked"""
-        open_form("QuestionPage")
+        open_form('Form1')
 
     def link_1_click(self, **event_args):
         """This method is called when the link is clicked"""
