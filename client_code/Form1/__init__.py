@@ -24,10 +24,10 @@ class Form1(Form1Template):
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
 
-    radio_button_3
     
     
-    Get the user's responses
+    
+        Get the user's responses
         response1 = self.text_box_1.text
         response2 = self.text_box_2.text
         response3 = self.text_box_3.text
