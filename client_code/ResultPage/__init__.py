@@ -27,6 +27,6 @@ class ResultPage(ResultPageTemplate):
 
         # For demonstration purposes, let's consider a random evaluation
         labels = ["Very Easy", "Moderate", "Hard"]
-        evaluated_label = random.choice(labels)
-
-        return f"The result is {evaluated_label}"
+        evaluated_label = result
+        return evaluated_label
+        #return f"The result is {evaluated_label}"
