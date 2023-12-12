@@ -33,10 +33,7 @@ class Form1(Form1Template):
     if app.radio_button_4.checked:
         radio_button_4_value = 0  # Set to 0 based on the condition (modify as needed)
     
-        Get the user's responses
-        response1 = self.text_box_1.text
-        response2 = self.text_box_2.text
-        response3 = self.text_box_3.text
+        
     
         # Call the Anvil server function to send responses to Jupyter notebook
         result = anvil.server.call('add_numbers', a, b)
