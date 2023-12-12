@@ -24,22 +24,18 @@ class Form1(Form1Template):
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
 
+    print(self.)
     
     # Check the value of a radiobutton and set 0 as the value of another variable
-    radio_button_3_value = 0
-    if app.radio_button_3.checked:
-        radio_button_3_value = 0  # Set to 0 based on the condition (modify as needed)
-    radio_button_4_value = 1
-    if app.radio_button_4.checked:
-        radio_button_4_value = 0  # Set to 0 based on the condition (modify as needed)
+    
     
         
     
         # Call the Anvil server function to send responses to Jupyter notebook
-        result = anvil.server.call('add_numbers', a, b)
+    result = anvil.server.call('add_numbers', a, b)
 
         # For demonstration purposes, let's assume the result is a placeholder value
-        result = "PlaceholderResult"
+    result = "PlaceholderResult"
 
         # Open the ResultPage and pass the result as a parameter
-        open_form(ResultPage, result=result)
+    open_form(ResultPage, result=result)
