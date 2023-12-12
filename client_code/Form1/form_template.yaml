@@ -8,37 +8,6 @@ components:
   name: content_panel
   layout_properties: {slot: default}
   components:
-  - name: card_1
-    properties: {role: card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'PPXYLX,PDJCST'}
-    components:
-    - name: label_2
-      properties: {text: 'Are you studying at the undergraduate or In addition to
-          your education, do you indulge in any other activities?graduate level?',
-        bold: true}
-      type: Label
-      layout_properties: {grid_position: 'HZPHNU,NQSSJO'}
-    - name: check_box_1
-      properties: {text: Work}
-      type: CheckBox
-      layout_properties: {grid_position: 'FDSJNM,ZDYDUW'}
-    - name: check_box_2
-      properties: {text: Part-time job}
-      type: CheckBox
-      layout_properties: {grid_position: 'FDSJNM,AIOHHG'}
-    - name: check_box_3
-      properties: {text: Sports}
-      type: CheckBox
-      layout_properties: {grid_position: 'FDSJNM,PVMOJW'}
-    - name: check_box_4
-      properties: {text: Other}
-      type: CheckBox
-      layout_properties: {grid_position: 'FDSJNM,UDIRRS'}
-    - name: check_box_5
-      properties: {text: None}
-      type: CheckBox
-      layout_properties: {grid_position: 'FDSJNM,PCXLFI'}
   - name: card_2
     properties: {role: card}
     type: ColumnPanel
@@ -119,6 +88,28 @@ components:
         items: [1 day in a week, 2 days in week, 3 days in week, 4 days in week, 5 days in week]
       type: DropDown
       layout_properties: {grid_position: 'MDVNKZ,IVRNYR'}
+  - name: card_1
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'XGPJFR,UVONMQ'}
+    components:
+    - name: label_2
+      properties: {text: 'How many hours a day of study do you think are the most
+          productive for you?', bold: true}
+      type: Label
+      layout_properties: {grid_position: 'BWIFMB,RYFFFY'}
+    - name: radio_button_10
+      properties: {text: One hour or less}
+      type: RadioButton
+      layout_properties: {grid_position: 'ZLDHYF,YFIGFC'}
+    - name: radio_button_11
+      properties: {text: 2 - 4 hours}
+      type: RadioButton
+      layout_properties: {grid_position: 'ZLDHYF,LEFVFK'}
+    - name: radio_button_12
+      properties: {text: radio_button_12}
+      type: RadioButton
+      layout_properties: {grid_position: 'ZLDHYF,XEHUSB'}
   - name: card_7
     properties: {role: card}
     type: ColumnPanel
