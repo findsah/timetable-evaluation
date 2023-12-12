@@ -24,7 +24,7 @@ class QuestionPage(QuestionPageTemplate):
         # Get the user's responses
         response1 = self.text_box_1.text
         response2 = self.text_box_2.text
-        response3 = self.text_box_2.text  # Fix the typo here
+        response3 = self.text_box_2.text 
 
         # Call the Anvil server function to send responses to Jupyter notebook
         result = anvil.server.call('predict_result', response1, response2, response3)

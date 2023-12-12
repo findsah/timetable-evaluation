@@ -2,6 +2,7 @@
 import random
 from ._anvil_designer import ResultPageTemplate
 from anvil import *
+import anvil.server
 
 class ResultPage(ResultPageTemplate):
     def __init__(self, result, **properties):
