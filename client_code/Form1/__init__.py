@@ -39,7 +39,7 @@ class Form1(Form1Template):
         response3 = self.text_box_3.text
     
         # Call the Anvil server function to send responses to Jupyter notebook
-        result = anvil.server.call('predict_result', response1, response2, response3)
+        result = anvil.server.call('add_numbers', a, b)
 
         # For demonstration purposes, let's assume the result is a placeholder value
         result = "PlaceholderResult"
