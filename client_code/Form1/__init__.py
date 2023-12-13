@@ -241,25 +241,6 @@ class Form1(Form1Template):
       NbEveningClasses=5
     return NbEveningClasses
 
-  def decoding_FailAnyCourses(self):
-    FailAnyCourses=0
-
-    if self.drop_down_5.selected_value=="None":
-      FailAnyCourses=0
-    else:
-      FailAnyCourses=1
-    return FailAnyCourses
-
-  def decoding_GPAaffectedPositively(self):
-    GPAaffectedPositively =0
-
-    if self.radio_button_26.selected==True:
-      GPAaffectedPositively =0
-    if self.radio_button_27.selected==True:
-      GPAaffectedPositively =1
-    if self.radio_button_28.selected==True:
-      GPAaffectedPositively =2
-    return GPAaffectedPositively
     
   def decoding_nbInstructorsUnfamiliar(self):
     nbInstructorsUnfamiliar = 0
@@ -335,8 +316,6 @@ class Form1(Form1Template):
     NbMorningClasses = self.decoding_NbMorningClasses()
     NbAfternoonClasses = self.decoding_NbAfternoonClasses()
     NbEveningClasses = self.decoding_NbEveningClasses()
-    FailAnyCourses = self.decoding_FailAnyCourses()
-    GPAaffectedPositively = self.decoding_GPAaffectedPositively()
     nbInstructorsUnfamiliar = self.decoding_nbInstructorsUnfamiliar()
     nbPrefInstructors = self.decoding_nbPrefInstructors()
     nbNONPrefInstructors = self.decoding_nbNONPrefInstructors()
@@ -346,7 +325,7 @@ class Form1(Form1Template):
     
     # Check the value of a radiobutton and set 0 as the value of another variable
     
-    test_case_list =[majorStudy,creditCompleted,timeOfDayMostSuited,preferredWeeklyAttendance,NbHoursDayMostProductive,	longBreaksBetweenClasses,Semester,NbCreditsEnrolled,NbElectiveCredits,NbDaysAttendingClasses,LowNbHoursPerDay,	maximumNbHoursPerDay,NbMorningClasses,NbAfternoonClasses,NbEveningClasses,FailAnyCourses,GPAaffectedPositively,	nbInstructorsUnfamiliar,nbPrefInstructors,nbNONPrefInstructors,followPrimaryPath]
+    test_case_list =[majorStudy,creditCompleted,timeOfDayMostSuited,preferredWeeklyAttendance,NbHoursDayMostProductive,	longBreaksBetweenClasses,Semester,NbCreditsEnrolled,NbElectiveCredits,NbDaysAttendingClasses,LowNbHoursPerDay,	maximumNbHoursPerDay,NbMorningClasses,NbAfternoonClasses,NbEveningClasses,	nbInstructorsUnfamiliar,nbPrefInstructors,nbNONPrefInstructors,followPrimaryPath]
 
     print(len(test_case_list))
 
