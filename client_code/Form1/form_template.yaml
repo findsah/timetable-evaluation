@@ -290,45 +290,6 @@ components:
         items: [None, '1', '2', '3', '4', 5 or more]
       type: DropDown
       layout_properties: {grid_position: 'OSBIUH,FNOBDA'}
-  - name: card_18
-    properties: {role: card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'QUZLFY,EPAPMP'}
-    components:
-    - name: label_19
-      properties: {text: 'In that semester, did you fail any of your courses? If yes,
-          please specify the reason:', bold: true}
-      type: Label
-      layout_properties: {grid_position: 'OQJGHV,JAVVSF'}
-    - name: drop_down_5
-      properties:
-        items: [None, 'Yes, because of the (Instructor)', 'Yes, because of the (Course
-            Material)', 'Yes, because of the (Personal Reasons)', 'Yes, because of
-            the (Health Issues)', Other]
-      type: DropDown
-      layout_properties: {grid_position: 'DTIWXJ,RMXWEV'}
-  - name: card_19
-    properties: {role: card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'DRDIGR,NOOBIV'}
-    components:
-    - name: label_20
-      properties: {text: 'Was your overall GPA had been affected positively or negatively
-          by the marks you received that semester?', bold: true}
-      type: Label
-      layout_properties: {grid_position: 'MCAGAN,MGTVQI'}
-    - name: radio_button_26
-      properties: {text: Positively, group_name: radioGroup8}
-      type: RadioButton
-      layout_properties: {grid_position: 'LHCWTY,HGQKRA'}
-    - name: radio_button_27
-      properties: {text: Neutral, group_name: radioGroup8}
-      type: RadioButton
-      layout_properties: {grid_position: 'LHCWTY,HHRPIL'}
-    - name: radio_button_28
-      properties: {text: Negatively, group_name: radioGroup8}
-      type: RadioButton
-      layout_properties: {grid_position: 'LHCWTY,RSSIUW'}
   - name: card_14
     properties: {role: card}
     type: ColumnPanel
